@@ -1,0 +1,25 @@
+
+myheader {
+    .logo{
+        height: 42px;
+        margin: 4px 0 0 15px
+    }
+
+    .toolbar-ios ion-title{
+        padding: 0 50px 1px;
+    }
+    .toolbar-title-ios{
+        text-align: left
+    }
+
+    .app-header{
+        background-color: $header-bg;
+        display: flex;
+        padding: 0 10px;
+        // flex-direction: row-reverse;
+
+        .bar-buttons{
+            background-color: $header-bg;
+        }
+    }
+}

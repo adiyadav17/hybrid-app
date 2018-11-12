@@ -1,0 +1,36 @@
+<ion-header>
+  <myheader></myheader>
+</ion-header>
+
+<ion-content padding>
+<!-- <div *ngFor="let post of posts">
+  atul
+</div> -->
+
+<div *ngFor="let post of posts, let i=index">
+  <ion-card class="card card-custom" *ngIf="i<20">
+    
+    <ion-item>
+      <ion-avatar item-start>
+        <img [src]="post.thumbnailUrl" >
+      </ion-avatar>
+      <h2>Marty McFly</h2>
+      <p>November 5, 1955</p>
+    </ion-item>
+  
+    <img [src]="post.thumbnailUrl">
+
+    <ion-card-content>
+      <p>{{post.title}}</p>
+    </ion-card-content>
+  </ion-card>
+</div>
+  <ion-card>
+    <ion-card-header>
+      Title
+    </ion-card-header>
+    <ion-card-content>
+      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
